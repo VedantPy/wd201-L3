@@ -31,7 +31,7 @@ const todoList = () => {
     return list
       .map(
         (item) =>
-          `${item.completed ? `[x]` : `[]`} ${item.title} ${
+          `${item.completed ? `[x]` : `[ ]`} ${item.title} ${
             item.dueDate === yesterday
               ? `${yesterday}`
               : item.dueDate === today
